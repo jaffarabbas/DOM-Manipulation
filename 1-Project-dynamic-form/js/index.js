@@ -23,8 +23,11 @@ labelInputFeild.addEventListener('keyup', (event) => {
 
         if (type != 'submit') {
             divCreater.appendChild(labelCreater);
-        } else {
-
+        }
+        if (type == 'submit') {
+            inputCreater.classList.add("btn");
+            inputCreater.classList.add("btn-success");
+            inputCreater.value = label;
         }
         divCreater.appendChild(inputCreater);
 
